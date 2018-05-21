@@ -26,7 +26,8 @@ const style = StyleSheet.create({
 	},
 	img: {
 		width: 60,
-		height: 60
+		height: 60,
+		marginRight: 15
 	},
 	title: {
 		fontWeight: 'bold',
