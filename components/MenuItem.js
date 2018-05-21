@@ -1,21 +1,21 @@
 import React from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
 
-const Item = () => (
+const Item = (props) => (
 	<View style={style.container}>
 		<Image 
-			source={require('./../assets/img/logo-banco-sangre.png')}
+			source={props.path}
 			style={style.img}
 		/>
 		<View>
-			<Text style={style.title}>Banco Sangre</Text>
-			<Text>Lorem ipsum dolor sit amet consectetur. sit amet consectetur.</Text>
+			<Text style={style.title}>{props.title}</Text>
+			<Text>{props.description}</Text>
 		</View>
 	</View>
 )
 
 const style = StyleSheet.create({
-	style: {
+	container: {
 		backgroundColor: 'white',
 		flex: 1,
 		flexDirection: 'row',
