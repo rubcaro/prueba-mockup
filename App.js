@@ -6,34 +6,9 @@ import { createStackNavigator } from 'react-navigation'
 import MenuItem from './components/MenuItem'
 import items from './data/items'
 
-class HomeScreen extends React.Component {
-  render() {
-    return (
-      <ScrollView style={styles.container}>
-        {items.map((item, index) => (
-          <TouchableOpacity 
-            onPress={() => this.props.navigation.navigate('BancoSangre')}
-            underlaycolor="white"
-            style={{height:100}}
-            key={index}
-          >
-            <MenuItem {...item} />
-          </TouchableOpacity>
-        ))}
-      </ScrollView>
-    );
-  }
-}
-
-class BancoSangreScreen extends React.Component {
-  render() {
-    return (
-      <View>
-        <Text>Banco de Sangre</Text>
-      </View>
-    )
-  }
-}
+import BancoSangreScreen from './screens/BancoSangreScreen'
+import ContactoScreen from './screens/ContactoScreen'
+import HomeScreen from './screens/HomeScreen'
 
 const RootStack = createStackNavigator (
   {
@@ -55,6 +30,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F8F8F8',
-    marginTop: Constants.statusBarHeight
+    // marginTop: Constants.statusBarHeight
   },
 });
