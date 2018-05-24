@@ -1,7 +1,10 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native'
 
-class HomeScreen extends React.Component {
+import items from './../data/items'
+import MenuItem from './../components/MenuItem'
+
+export default class HomeScreen extends React.Component {
     render() {
       return (
         <ScrollView style={styles.container}>
@@ -19,3 +22,11 @@ class HomeScreen extends React.Component {
       );
     }
   }
+
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#F8F8F8',
+      // marginTop: Constants.statusBarHeight
+    },
+  });

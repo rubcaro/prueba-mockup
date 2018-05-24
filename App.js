@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
 import { Constants } from 'expo'
-import { createStackNavigator } from 'react-navigation'
+import { createStackNavigator, DrawerItems, SafeAreaView } from 'react-navigation'
 
 import MenuItem from './components/MenuItem'
 import items from './data/items'
@@ -26,10 +26,4 @@ export default class App extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F8F8F8',
-    // marginTop: Constants.statusBarHeight
-  },
-});
+

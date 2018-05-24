@@ -1,6 +1,6 @@
 const items = [
     {
-      title: 'Banco de Sangr',
+      title: 'Banco de Sangre',
       description: 'Lorem ipsum dolor sit amet',
       path: require('./../assets/img/logo-banco-sangre.png')
     },
